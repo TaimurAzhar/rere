@@ -1,0 +1,55 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+
+	font-family: "Nunito", sans-serif;
+}
+
+.input-style{
+	height: 50px;
+	width: 600px;
+	background: #e7e7e7;
+	font-family: "Nunito", sans-serif;
+	font-size: 20px;
+	border: none;
+	border-radius: 2px;
+	padding: 10px 10px;
+
+}
+
+.input{
+	text-align: center;
+	margin: 100px 0;
+}
+
+
+#search-button.input-style{
+	width: 100px;
+	font-weight: bold;
+
+}
+
+.artist-info-display{
+	text-align: center;
+
+}
+
+.hide-display{
+	display: none;
+}
+
+
+.number-of-events{
+	padding: 4%;
+	text-align: center;
+}
+
+
+
+
+
