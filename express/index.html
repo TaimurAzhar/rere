@@ -1,53 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Bands INNNN Town!</title>
-	<link rel="stylesheet" href= "css/style.css">
-	
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bands innn Town!</title>
+  
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Krub:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <!-- Script for Google Maps -->
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrFsCAyTKvhNkLdJs8hx_Kf_3GW0R5LfA&callback=initMap&libraries=&v=weekly" defer>
+  </script>
+
+  <!-- =======================================================
+  * Template Name: Bikin - v2.1.0
+  * Template URL: https://bootstrapmade.com/bikin-free-simple-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-
-	
-		<div class="input">
-			<input type="text"  class="inputValue input-style" placeholder = " Search artist ">
-			<input  name="artist" id="search-button" class="input-style" type="submit" value="Search">	
-		</div>
-		
-
-	
 	
 
-
-	<div class="artist-info-display">
-		<h1 class="artist-name"> </h1>
-		<p> <img class="artist-image hide-display" src=" "></p>
-		<button id= "fb-button" class="hide-display"><a class="fb-link" href="#" target="_blank">Visit Facebook Profile</a></button>
-		<button id= "events-button" class="hide-display"><a class="events-link" href="#" ">View Events</a></button>
-		
-	</div>
-
-	<div class = "event-info-display">
-		<h1 class= "number-of-events"> </h1>
-
-		<div class="event-detail-div">
-		
-<!-- 		<ul>
-			<h3 class="event-heading hide-display"></h3>
-			
-			<li class="event-country"></li>
-			<li class="event-city"></li>
-			<li class="event-venue"></li>
-			<li class="event-date"></li>
-		</ul> -->
-
-	</div>
-		
-	</div>
-
-	
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
 
 
-<script type= "text/javascript" src="js/app.js" defer></script>
+      <h1 class="logo mr-auto"><a href="index.html">BandsInTown</a></h1>
+      
+      
+
+      <nav class="nav-menu d-none d-lg-block">
+        
+      </nav><!-- .nav-menu -->
+
+      <a href="#about" class="get-started-btn scrollto">Get Started</a>
+      
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
+      <h1>Stay Connected with your Favourite Artists</h1>
+      <h2>Discover the best upcoming live streams from around the world - continuously updated so you'll never miss a thing.</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <img src="assets/img/hero-img.png" class="img-fluid hero-img" alt="" data-aos="zoom-in" data-aos-delay="150">
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="content">
+              <h3>Look up your Favourite Artist</h3>
+              <p>
+                Don't miss the chance to see your favourite in concert! Search now for any upcoming events and concerts snear you.
+              </p>
+              
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+               
+                
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                <br/>
+
+                  <h4>Search Artist</h4>
+                  <!-- <form class="example" action="#features scrollto">
+				  <input type="text" placeholder="Search artist" name="search">
+				  <button type="submit">Search</button>
+				 </form>-->
+
+              
+
+        				 <div class="artist-input">
+        					<input type="text"  class="inputValue" placeholder = "Search artist " name="artist" required>
+        					<!-- <input class="scrollto" id="search-button"  type="submit" value="Search">	 -->
+                  <a href="#artist-info-section" id="search-button" value="Search" type="submit" class=" scrollto" > Search </a>
+                  <!-- <a href="/artist" id="search-button" value="Search" type="submit" class=" scrollto"> Search </a> -->
+        				</div>
+
+            
+
+
+			   </div>
+
+
+
+                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                 
+                   <img src="assets/img/singer.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="150">
+                </div> 
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- ======= Hero Section ======= -->
+    <section class="artist-info hide-display hide-display" id="artist-info-section">
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="artist-info-display container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
+     
+      <h1 class = "artist-name"></h1>
+     
+      <img src="" class="artist-image hero-img" alt="" data-aos="" data-aos-delay="150">
+      <button id= "fb-button" class=""><a class="fb-link" href="#" target="_blank">Visit Facebook Profile</a></button>
+      <button id= "events-button" class=""><a class="events-link" href="#steps" data-link>View Events</a></button>
+      
+      <div>
+      </div>
+      
+    
+    </div>
+
+  </section><!-- End Hero -->
+  </section>
+
+  <section id="fb-error" class= "hide-display">
+    <h1>Oops, can't find a Facebook Page</h1>
+  </section>
+
+  
+
+
+    <!-- ======= Steps Section ======= -->
+    <section id="steps" class="steps">
+      <div class="container">
+
+      	<h1 class= "number-of-events"></h1>
+
+        <div id="final-events-display" class="row no-gutters" data-aos="fade-up">
+
+
+          <div class="event-info-display col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
+          	
+          	<!-- <span>01</span>  -->
+          	<h4 class="event-heading hide-display">Event Details</h4>
+          		
+           
+<!-- 	            <ul class="event-details-list hide-display">
+
+	            	<li class="event-country"></li>
+      					<li class="event-city"></li>
+      					<li class="event-venue"></li>
+                <li class="event-date"></li>
+                
+	            </ul>
+           		 -->
+        
+         </div> 
+
+
+
+        </div>
+
+      </div>
+
+
+    </section><!-- End Steps Section -->
+
+   
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>View Event On Map</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-12">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                   <!-- <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p> -->
+                  <div id="map">
+                   
+
+                  </div>
+                  
+                </div>
+              </div>
+           
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-md-0">
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template for JS Files -->
+
+  
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script type= "text/javascript" src="assets/js/app.js"></script>
+
+
 
 </body>
+
 </html>
