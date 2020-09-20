@@ -60,7 +60,7 @@ artist_search_button.addEventListener('click', function(){
   .then(response => response.json())
   .then(data => {
 
-    artist_search_button.classList.remove('disable-button');
+    
 
     if(counter >= 1){
 
@@ -197,53 +197,58 @@ events_button.addEventListener('click',function(){
               
 
 
-
-              //var ul = document.createElement('ul');
+              let eventCard = document.createElement('div');
+              eventCard.className = 'event-card';
+              var ul = document.createElement('ul');
               ul.setAttribute('class', 'event-details-list');
               var heading = document.createElement('h4');
               heading.setAttribute('class', 'event-heading');
 
               heading.innerHTML = "EVENT DETAILS";
+              eventCard.appendChild(heading)
 
               var country = document.createElement('li');
               var city = document.createElement('li');
               var e_venue = document.createElement('li');
               var date = document.createElement('li');
-              var latitude = document.createElement('li');
-              var longitude = document.createElement('li');
+              // var latitude = document.createElement('li');
+              // var longitude = document.createElement('li');
               var map_button = document.createElement('button');
 
               country.setAttribute('class', 'event-country');
               city.setAttribute('class', 'event-city');
               e_venue.setAttribute('class', 'event-venue');
               date.setAttribute('class', 'event-date');
-              latitude.setAttribute('class', 'event-latitude');
-              longitude.setAttribute('class', 'event-longitude');
+              // latitude.setAttribute('class', 'event-latitude');
+              // longitude.setAttribute('class', 'event-longitude');
 
-              map_button.setAttribute('class', 'map-button');
+              // map_button.setAttribute('class', 'map-button');
           
 
-              country.innerHTML = "<strong>Country: </strong>" + artist_events_array[x].venue.country;
-              city.innerHTML = "<strong>City: </strong>" + artist_events_array[x].venue.city;
-              e_venue.innerHTML = "<strong>Venue: </strong>" + artist_events_array[x].venue.name;
+              country.innerHTML = "<strong>Country: </strong>" + "<p>" + artist_events_array[x].venue.country + "</p>";
+              city.innerHTML = "<strong>City: </strong>" + "<p>" + artist_events_array[x].venue.city + "</p>";
+              e_venue.innerHTML = "<strong>Venue: </strong>" + "<p>" + artist_events_array[x].venue.name + "</p>";
              
-              date.innerHTML = "<strong>Date: </strong>" + artist_events_array[x].datetime;
-              latitude.innerHTML =  "<strong>Latitude value: </strong>" + artist_events_array[x].venue.latitude;
-              longitude.innerHTML =  "<strong>Longitude value: </strong>" + artist_events_array[x].venue.longitude;
+              date.innerHTML = "<strong>Date: </strong>" + "<p>" + artist_events_array[x].datetime + "</p>";
+
+              // latitude.innerHTML =  "<strong>Latitude value: </strong>" + artist_events_array[x].venue.latitude;
+              // longitude.innerHTML =  "<strong>Longitude value: </strong>" + artist_events_array[x].venue.longitude;
               
-              map_button.innerHTML = "View on Map";
+              // map_button.innerHTML = "View on Map";
 
               
               
-              event_div.appendChild(ul);
-              ul.appendChild(heading);
+              // ul.appendChild(heading);
               ul.appendChild(country);
               ul.appendChild(city);
               ul.appendChild(e_venue);
               ul.appendChild(date);
+              eventCard.appendChild(ul);
+              event_div.appendChild(eventCard);
+
               // ul.appendChild(latitude);
               // ul.appendChild(longitude);
-              ul.appendChild(map_button);
+              // ul.appendChild(map_button);
 
               // map_button.addEventListener('click', function(){
               //   initMap();

@@ -1652,7 +1652,34 @@ section {
 .event-details-list{
   /*list-style-type:none;*/
   list-style-type: square;
+  justify-content: center;
+  width: 300px !important;
+  height: 200px !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+
 }
+
+.event-info-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.event-card {
+  background-color: antiquewhite;
+  margin: 20px;
+}
+
+.event-heading {
+  margin-left: 15% !important;
+}
+.event-card li {
+  height: 75px;
+  line-height: 2.5;
+}
+
 .number-of-events{
   text-align: center;
 }
